@@ -11,7 +11,7 @@ class Werk < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/zackbart/werk/releases/download/v0.2.1/werk_0.2.1_darwin_amd64.tar.gz"
-      sha256 "e638fa2da2ebdb9550cfd5f5945e9e4bec2b7fe117d4d0b4795f821b1d140986"
+      sha256 "906f456af2864352d7408a6faa66f45a68623aa53bf7dfb59b235f6f8d2def08"
 
       define_method(:install) do
         bin.install "werk"
@@ -19,7 +19,7 @@ class Werk < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/zackbart/werk/releases/download/v0.2.1/werk_0.2.1_darwin_arm64.tar.gz"
-      sha256 "4b3e6fe44e13334e44e0495d92ec63f0bdc1b7012cfa436f138e3bb21d90bd37"
+      sha256 "a882ff1fbd577aa2301bf11d8c323e4efdbbe1a5b526fffe4b20d4fba95ab878"
 
       define_method(:install) do
         bin.install "werk"
@@ -30,14 +30,14 @@ class Werk < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/zackbart/werk/releases/download/v0.2.1/werk_0.2.1_linux_amd64.tar.gz"
-      sha256 "db41bdbaf73fe00f9cf792ae90a0bb8cd7dcc4085c15336b42b68dbc1a7106d8"
+      sha256 "53fdb866a2627fd5559c4a4051bb40edddb9872cb0a7aea62b09816d89aa514a"
       define_method(:install) do
         bin.install "werk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/zackbart/werk/releases/download/v0.2.1/werk_0.2.1_linux_arm64.tar.gz"
-      sha256 "44dcc57a1e30f4fe151f577909e503619cc5e341df693d664577415b0d4e90aa"
+      sha256 "54518fd141a9d507e6bc5837f4bd3fdb641f4eb34568321130372c7efd70435a"
       define_method(:install) do
         bin.install "werk"
       end
