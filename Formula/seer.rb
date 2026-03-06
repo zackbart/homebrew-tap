@@ -5,21 +5,21 @@
 class Seer < Formula
   desc "A dead-simple TUI for browsing directories and previewing files"
   homepage "https://github.com/zackbart/seer"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zackbart/seer/releases/download/v0.1.3/seer_0.1.3_darwin_amd64.tar.gz"
-      sha256 "475cfaa98eaf40b1f26b16bd773bf6d9bd9a82acfcb742985c248aba387b8bb7"
+      url "https://github.com/zackbart/seer/releases/download/v0.1.4/seer_0.1.4_darwin_amd64.tar.gz"
+      sha256 "91544dbdb1583f0f3d369569af235d633330e8eeabc1a8b81f837dea3f4cce7b"
 
       define_method(:install) do
         bin.install "seer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zackbart/seer/releases/download/v0.1.3/seer_0.1.3_darwin_arm64.tar.gz"
-      sha256 "28dd034467ce74d5488bdfd0bfcb8a7391a84397e398013201f90c3f3f66c1cc"
+      url "https://github.com/zackbart/seer/releases/download/v0.1.4/seer_0.1.4_darwin_arm64.tar.gz"
+      sha256 "f69ab13c25d0b40b64792be23485efae001184677d3d9476b80c0df2520351be"
 
       define_method(:install) do
         bin.install "seer"
@@ -29,15 +29,15 @@ class Seer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zackbart/seer/releases/download/v0.1.3/seer_0.1.3_linux_amd64.tar.gz"
-      sha256 "99560a84bfd17eeb57bf0744d3a846dfce0ea85d124d1c064b197c41711f6f3c"
+      url "https://github.com/zackbart/seer/releases/download/v0.1.4/seer_0.1.4_linux_amd64.tar.gz"
+      sha256 "2ecd8b47aee4ea06cac566fae7d5084e6f8e3f79147deeb1add4876a7b05554b"
       define_method(:install) do
         bin.install "seer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zackbart/seer/releases/download/v0.1.3/seer_0.1.3_linux_arm64.tar.gz"
-      sha256 "25b25b8cc2e2eb80ea62a20102a16dd83c26809b76919882184c410e393dbc08"
+      url "https://github.com/zackbart/seer/releases/download/v0.1.4/seer_0.1.4_linux_arm64.tar.gz"
+      sha256 "841d2f955c79bc0118d81d56ea8073de476b86f9b949d9e8a12a8121673461be"
       define_method(:install) do
         bin.install "seer"
       end
