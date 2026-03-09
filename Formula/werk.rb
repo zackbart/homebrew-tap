@@ -5,21 +5,21 @@
 class Werk < Formula
   desc "Local-first task and decision tracker for AI-assisted development"
   homepage "https://github.com/zackbart/werk"
-  version "0.2.3"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zackbart/werk/releases/download/v0.2.3/werk_0.2.3_darwin_amd64.tar.gz"
-      sha256 "94e80af2a275463b06e4a078d8f4cb082b1868f3ec649d8d0658ca0cf1df168e"
+      url "https://github.com/zackbart/werk/releases/download/v0.3.0/werk_0.3.0_darwin_amd64.tar.gz"
+      sha256 "0d6414e518376803007da516d6947298ecff76364b58de117867ed5f91636945"
 
       define_method(:install) do
         bin.install "werk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zackbart/werk/releases/download/v0.2.3/werk_0.2.3_darwin_arm64.tar.gz"
-      sha256 "d3a72bcfe4623777515215117759fec9f4cf5e8183a2feb082f8488005257769"
+      url "https://github.com/zackbart/werk/releases/download/v0.3.0/werk_0.3.0_darwin_arm64.tar.gz"
+      sha256 "0b7214ac5508a1f1542e44fbab00d5d22dc4c878e1ed64e961e92a3fcb21a893"
 
       define_method(:install) do
         bin.install "werk"
@@ -29,15 +29,15 @@ class Werk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zackbart/werk/releases/download/v0.2.3/werk_0.2.3_linux_amd64.tar.gz"
-      sha256 "7126761ed2ae5ecc7aedd70bf9d47ee2130e2889213587799fd15d2adc8c88e5"
+      url "https://github.com/zackbart/werk/releases/download/v0.3.0/werk_0.3.0_linux_amd64.tar.gz"
+      sha256 "4968ae28babd02bcdceff9f2970da3f74c4675b044d35047b6c1bddc2efdab38"
       define_method(:install) do
         bin.install "werk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zackbart/werk/releases/download/v0.2.3/werk_0.2.3_linux_arm64.tar.gz"
-      sha256 "6876b8cd78b09e93c41a3ab9b9b7c8022260fbeb1d3165fa4d409a5099bc5be1"
+      url "https://github.com/zackbart/werk/releases/download/v0.3.0/werk_0.3.0_linux_arm64.tar.gz"
+      sha256 "002b392b2ee5cf58899a9d910d6ceff4e125d0579fa246d6038db45b1d868e79"
       define_method(:install) do
         bin.install "werk"
       end
