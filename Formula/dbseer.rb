@@ -5,21 +5,21 @@
 class Dbseer < Formula
   desc "Lightweight browser-based Postgres GUI for dev environments"
   homepage "https://github.com/zackbart/dbseer"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zackbart/dbseer/releases/download/v0.1.2/dbseer_0.1.2_darwin_amd64.tar.gz"
-      sha256 "26a18745ebd863322b4e413c1cf07857ea495a08c680190066a8d5662e08f400"
+      url "https://github.com/zackbart/dbseer/releases/download/v0.1.3/dbseer_0.1.3_darwin_amd64.tar.gz"
+      sha256 "e50332a8d878dcd6e29e013f82dd845dab7bf5fd381f590fde66d846e19d93de"
 
       define_method(:install) do
         bin.install "dbseer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zackbart/dbseer/releases/download/v0.1.2/dbseer_0.1.2_darwin_arm64.tar.gz"
-      sha256 "24097549e55e93734bd6a357723f2e836db127d3323ac984aff1b0f9c4ed57a7"
+      url "https://github.com/zackbart/dbseer/releases/download/v0.1.3/dbseer_0.1.3_darwin_arm64.tar.gz"
+      sha256 "b5f007a895303d75b234c1a6d6bb5286e46181d240561df795b1416a208c2ac1"
 
       define_method(:install) do
         bin.install "dbseer"
@@ -29,15 +29,15 @@ class Dbseer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zackbart/dbseer/releases/download/v0.1.2/dbseer_0.1.2_linux_amd64.tar.gz"
-      sha256 "b87e8565cbd991c8b13b4687cac4cb8c99236bd536a2a9a6ea6ed1c0a3f39105"
+      url "https://github.com/zackbart/dbseer/releases/download/v0.1.3/dbseer_0.1.3_linux_amd64.tar.gz"
+      sha256 "a4ebf88a1d086336c8605c8de8c7b77df329939029c8993e24ff9233c1686616"
       define_method(:install) do
         bin.install "dbseer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zackbart/dbseer/releases/download/v0.1.2/dbseer_0.1.2_linux_arm64.tar.gz"
-      sha256 "c6206ea6efbedf8155bcca3cc090aae137b4eee9c53d591bf329460bb29e9edd"
+      url "https://github.com/zackbart/dbseer/releases/download/v0.1.3/dbseer_0.1.3_linux_arm64.tar.gz"
+      sha256 "578714fbecf2b6abb375fce01d283a82a49056753090692d627ff7ff4cf6543f"
       define_method(:install) do
         bin.install "dbseer"
       end
