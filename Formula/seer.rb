@@ -4,17 +4,17 @@
 class Seer < Formula
   desc "A TUI file browser with live preview"
   homepage "https://github.com/zackbart/seer"
-  version "1.0.21"
+  version "1.0.22"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/zackbart/seer/releases/download/v1.0.21/seer_darwin_arm64.tar.gz"
-      sha256 "087e1ea44fa5360fe1bae1d34a720ee4bc7a3c85f5e2b26833482c5189281c2c"
+      url "https://github.com/zackbart/seer/releases/download/v1.0.22/seer_darwin_arm64.tar.gz"
+      sha256 "ca17c464164baafcb10150572ab30e55513fce5df527546b808fddbfea2e5303"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zackbart/seer/releases/download/v1.0.21/seer_darwin_amd64.tar.gz"
-      sha256 "9eb4a25d3ef776851520a4b876cf0d043e5af88ab321507f73fa029c16aa19ce"
+      url "https://github.com/zackbart/seer/releases/download/v1.0.22/seer_darwin_amd64.tar.gz"
+      sha256 "24c8dc9980f5a21bfe6cde2a92e3951bb04f0c7e4a2cf8047f1455bd62b1ccd7"
     end
   end
 
@@ -23,12 +23,12 @@ class Seer < Formula
     # CPU (including VMs / older servers without AVX2). See
     # release.yml for rationale.
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zackbart/seer/releases/download/v1.0.21/seer_linux_amd64_baseline.tar.gz"
-      sha256 "be36a077e64e2c79403876e6d1da11e07c15863779bcab77d1270f880d33108e"
+      url "https://github.com/zackbart/seer/releases/download/v1.0.22/seer_linux_amd64_baseline.tar.gz"
+      sha256 "853aaef820ab6d03771423a5677d660f396fc3584d384a2c070b3314540e0291"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zackbart/seer/releases/download/v1.0.21/seer_linux_arm64.tar.gz"
-      sha256 "30cdf60e1cb7fc6987cb1d1b133648f6ee9a93b35ed26fe9bb0dce5c5226e8ff"
+      url "https://github.com/zackbart/seer/releases/download/v1.0.22/seer_linux_arm64.tar.gz"
+      sha256 "3b176c81b0aa55863dc595db8c57b8571fd3a6ba42ad0648c8a720daa69e7ec9"
     end
   end
 
