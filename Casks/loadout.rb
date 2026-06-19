@@ -1,6 +1,6 @@
 cask "loadout" do
-  version "0.0.2"
-  sha256 "730637f259ee0741272745461b5af7f9f8757556ec337a87ba0953f11bbd704c"
+  version "0.0.3"
+  sha256 "a3a3c1d3f88cc0d1b7e2aa6e86ff69a8a9b2cbbac1469400d27249f12ec32f10"
 
   url "https://github.com/zackbart/loadout/releases/download/v#{version}/Loadout-#{version}.dmg",
       verified: "github.com/zackbart/loadout/"
