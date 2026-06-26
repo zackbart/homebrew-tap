@@ -1,6 +1,6 @@
 cask "windo" do
-  version "0.1.1"
-  sha256 "0c97b3e24a76bea9a7e9c611b57a87defc1105ab8086c6f337d6b780dfb13b57"
+  version "0.1.2"
+  sha256 "59148ed1d9e7a0e876f213aba9d4e0517c356c1e1ed721d501a82a0b2dd7e631"
 
   url "https://github.com/zackbart/windo/releases/download/v#{version}/Windo-#{version}.dmg",
       verified: "github.com/zackbart/windo/"
