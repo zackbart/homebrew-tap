@@ -1,6 +1,6 @@
 cask "barr" do
-  version "0.0.4"
-  sha256 "508dcc620baf3e30d0dee7bb0c0697c93cd75f5027f24e1daaf23e175e1b2d35"
+  version "0.0.5"
+  sha256 "6b231c237e0345b0eee3011f41b6932f02dc209768c74495252e926cd1edbc3f"
 
   url "https://github.com/zackbart/barr/releases/download/v#{version}/Barr-#{version}.dmg"
   name "Barr"
